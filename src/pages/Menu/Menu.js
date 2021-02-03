@@ -1,6 +1,7 @@
 import React from "react";
 import * as styles from "./Menu.module.css";
 
+import FlexCard from "../../components/FlexCard/FlexCard";
 import FoodCard from "../../components/FoodCard/FoodCard";
 import pizzaImage from "../../assets/pizza.jpg";
 import tacosImage from "../../assets/tacos.jpg";
@@ -54,6 +55,7 @@ const Menu = (props) => {
 
 	return (
 		<div className={styles.div}>
+			<FlexCard />
 			{menu.map((item) => {
 				return (
 					<FoodCard

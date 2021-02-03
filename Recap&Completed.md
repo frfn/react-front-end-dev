@@ -31,3 +31,5 @@ should have `width: 100%` and `display: block`
 ## Flow of work
 
 don't fully polish it, just work on small things at a time!
+
+added router
