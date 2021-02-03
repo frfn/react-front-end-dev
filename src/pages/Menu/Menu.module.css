@@ -1,0 +1,12 @@
+.div {
+	background: linear-gradient(
+		to right bottom,
+		rgb(193, 193, 255),
+		rgb(199, 255, 199)
+	);
+
+	padding: 20px;
+
+	display: flex;
+	flex-flow: column nowrap;
+}
