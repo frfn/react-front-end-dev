@@ -13,6 +13,7 @@ function App() {
 		<Switch>
 			<Route path="/menu" component={Menu} />
 			<Route path="/" component={OmniFood} />
+			<Redirect to="/" />
 		</Switch>
 	);
 
