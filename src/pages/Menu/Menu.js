@@ -10,6 +10,7 @@ import burgerImage from "../../assets/burger.jpg";
 const Menu = (props) => {
 	const menu = [
 		{
+			/*** PIZZA ***/
 			image: pizzaImage,
 			title: "Pizza Vegetale 🍕",
 			tags: [
@@ -24,6 +25,7 @@ const Menu = (props) => {
 			price: "$9.99",
 		},
 		{
+			/*** TACO ***/
 			image: tacosImage,
 			title: "Deconstructed Tacos 🧀",
 			tags: [
@@ -38,6 +40,7 @@ const Menu = (props) => {
 			price: "$7.99",
 		},
 		{
+			/*** BURGER ***/
 			image: burgerImage,
 			title: "Deluxe Burger 🍔",
 			tags: [

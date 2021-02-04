@@ -4,6 +4,21 @@
 	box-sizing: border-box;
 }
 
+/* this is where the google font will go! */
+html {
+	/* scroll-behavior: smooth; THIS ALSO WORKS, no jQuery needed. */
+	background: white;
+	color: #555;
+	font-family: "Lato", "Helvetica", sans-serif;
+	font-size: 20px; /* base size, setting it FOR all devices */
+
+	/* optimizes the render of text */
+	text-rendering: optimizeLegibility;
+
+	/* 300 coming from LATO, keep it consistent */
+	font-weight: 300;
+}
+
 body {
 	margin: 0;
 	padding: 0;

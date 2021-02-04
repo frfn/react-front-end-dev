@@ -1,0 +1,148 @@
+.row {
+	max-width: 1140px;
+	margin: 0 auto; /* centers */
+
+	display: flex;
+	justify-content: space-between;
+}
+
+/******** header ********/
+.header {
+	display: flex;
+	flex-flow: column nowrap;
+
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+		url("../../../assets//OmniFoodAssets/HeroImages/hero-min.jpg");
+
+	height: 100vh;
+
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+
+	position: relative;
+}
+
+/******** logo ********/
+.header__whiteLogo {
+	height: 100px;
+	margin-top: 20px;
+}
+
+.header__logo {
+	height: 70px;
+	margin: 5px 0;
+}
+
+/******** navi ********/
+.header__mainNav {
+	margin: 50px;
+	list-style: none;
+}
+
+.header__mainNav li {
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.header__mainNav li a:link,
+.header__mainNav li a:visited {
+	color: white;
+	padding: 8px 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	border-bottom: 2px solid transparent; /* so it doesn't resize!! */
+	transition: border-bottom 0.2s;
+}
+
+.header__mainNav li a:hover,
+.header__mainNav li a:active {
+	border-bottom: 2px solid #e67e22;
+}
+
+/******** Hero Text Box ********/
+.header__heroTextBox {
+	position: absolute;
+
+	width: 1140px;
+
+	top: calc(50%);
+	left: calc(50%);
+
+	/* centering hack */
+	transform: translate(-50%, -50%);
+}
+
+/******** buttons ********/
+.header__button:link,
+.header__button:visited {
+	/* so we can give our buttons padding, border, and margin SINCE it is an a tag ( inline element ) */
+	/* EDIT: this works, it gives the inline elements padding + margin */
+	display: inline-block;
+	padding: 10px 30px;
+
+	/* weight */
+	font-weight: 300;
+
+	/* gets rid of underline */
+	text-decoration: none;
+
+	/* roundness of button */
+	border-radius: 200px;
+
+	/* we can specify more than one element! */
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+
+	outline: none;
+}
+
+.header__button--full:link,
+.header__button--full:visited {
+	background-color: #e67e22;
+	color: white;
+
+	/* reason there is a border here is so that it matches the size of btn-ghost */
+	border: 1px solid #e67e22;
+
+	/* creating space */
+	margin-right: 15px;
+	outline: none;
+}
+
+.header__button--ghost:link,
+.header__button--ghost:visited {
+	border: 1px solid #e67e22;
+	color: #e67e22;
+	outline: none;
+}
+
+.header__button:hover,
+.header__button:active {
+	border: 1px solid #e67e22;
+	background-color: #cf6d17;
+	color: white;
+	outline: none;
+}
+
+/******** h1 tag ********/
+.h1 {
+	/* 20px so it gives the spacing for the bottom, TOP RIGHT BOTTOM LEFT */
+	margin: 0 auto 20px auto;
+	color: white;
+
+	/* use percentages for RELATIVE UNITS, keep in mind responsive design */
+	font-size: 240%; /* or 44px? */
+
+	/* big font size? LOWER THE WEIGHT */
+	font-weight: 300;
+
+	/* turns all letters to uppercase */
+	text-transform: uppercase;
+
+	/* space between each LETTER */
+	letter-spacing: 3px;
+
+	/* space between each WORD */
+	word-spacing: 3px;
+}
