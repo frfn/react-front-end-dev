@@ -1,0 +1,43 @@
+.section-meals {
+	padding: 0;
+	/* margin: 0; */
+	/* height: 100vh; */
+}
+
+.meals-showcase {
+	list-style: none;
+	width: 100%;
+
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.meals-showcase li {
+	flex: 1;
+
+	/* display: block;
+	float: left;
+	width: 25%; */
+}
+
+.meal-photo {
+	background: black;
+	overflow: hidden; /* still overflowing, BUT no scroll */
+	width: 100%;
+	margin: 0; /* must do this because NORMALIZE CSS file overwrites some CSS props */
+}
+
+.meal-photo img {
+	opacity: 0.7; /* background is white, so opacity will fade to white, we change to black .meal-photo */
+	transform: scale(1.15); /* 115% big SO it overflows*/
+	transition: transform 0.5s, opacity 0.5s;
+	height: auto;
+	width: 100%; /* this is the important piece! */
+}
+
+.meal-photo img:hover {
+	opacity: 1;
+	transform: scale(
+		1.05
+	); /* if 1, you can see white bottom border, so do 1.05! */
+}

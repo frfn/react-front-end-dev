@@ -47,3 +47,6 @@ Copy And Paste content! ✅
 -   google CDN in the `index.html` for React
 -   Completing section by section!
     -   header ✅
+    -   work on TWO OTHER SECTIONS next ✅
+    -   will rewatch animations, have forgotten to do them
+    -   that's it!

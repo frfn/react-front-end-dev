@@ -41,3 +41,45 @@ code {
 	padding: 0;
 	box-sizing: border-box;
 }
+
+section {
+	padding: 80px;
+}
+
+h2 {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	font-weight: 300;
+	font-size: 180%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+h2:after {
+	display: block;
+	height: 2px;
+	background-color: #e67e22;
+	content: ""; /* we do not want words in here so leave blank */
+	width: 100px;
+
+	/* 30px top, auto for left and right, 30px bottom */
+	margin: 30px auto 30px;
+}
+
+h3 {
+	text-transform: uppercase;
+	word-spacing: 2px;
+	font-weight: 300;
+	font-size: 110%;
+	margin-bottom: 15px;
+	/* letter-spacing: 1px; ** with this it forces a line break! */
+}
+
+/* big icons! */
+.icon-big {
+	margin-bottom: 20px;
+	font-size: 350%;
+	color: #cf6d17;
+	display: block;
+}

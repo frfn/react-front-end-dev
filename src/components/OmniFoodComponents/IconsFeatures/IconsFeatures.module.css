@@ -1,0 +1,32 @@
+.section-features {
+}
+
+.row {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.row:nth-child(3) {
+	display: flex;
+}
+
+.long-copy {
+	line-height: 145%;
+	width: 70%;
+
+	margin: 30px auto;
+}
+
+.box {
+	padding: 1%;
+	/* background-color: #cf6d17; */
+}
+
+.box p {
+	font-size: 90%;
+	line-height: 145%;
+}
+
+/***** Probably not needed *****/
+.js--section-features {
+}
